@@ -1,0 +1,21 @@
+﻿{%extends 'app/layout.html'%}
+{% load static %}
+ {% block body %} style="  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; background-image: url({%static '/app/images/25.jpg'%});" {%endblock%}
+{%block content %} 
+<div class="container" >
+
+
+ {% csrf_token %} 
+   </div><br> <br><br> <br> <br><br><br> <br> <br>
+  <center>  <div id="cantact" style="background:rgba(255,255,255,.5); width: 80%;" >
+     
+       <h1 ><font size="25"> Sorry no rooms available </font> </h1>
+    
+     
+      
+      </div></center></div>
+           
+    </div>
+{% endblock %}

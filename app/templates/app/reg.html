@@ -1,0 +1,61 @@
+﻿{%extends 'app/layout.html'%}
+{% load static %}
+ {% block body %} style="  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; background-image: url({%static '/app/images/25.jpg'%});" {%endblock%}
+{%block content %} 
+ {% if user.is_authenticated %}
+<div class="container" >
+     <div id="form"  >
+<table>
+   
+      
+        <form action="/bc" method="post" style="height: auto;
+width: 33%;
+float:right;
+ background:rgba(255,255,255,.5);">
+            {% csrf_token %}
+    <tr>
+      <input type="text" name="user" value=" {{request.user}}" hidden />
+        <td style="color:white;">status</td>
+         
+           <td style="color:white;"> available</td>
+       
+       </tr>
+            <tr><td style="color:white;">Name</td><td><input name="sname" type="text" placeholder="enter name"></td><td style="color:white;">Aadhar id</td> <td><input name="aadharno" type="text" placeholder="enter Aadhar id"></td>
+</tr>
+        <tr><td style="color:white;">Address</td><td><input name="address" type="text" placeholder="enter ADdress"></td></tr>
+    <tr><td style="color:white;">city</td><td><input name="city" type="text" placeholder="enter cIty"></td><td style="color:white;">Room type</td><td><input name="rt" type="text" value="{{roomtype}}" ></td></tr>
+    <tr><td style="color:white;">state </td><td><input name="state" type="text" placeholder="enter state"></td></tr>
+    
+    <tr><td style="color:white;">destination </td><td><input name="destination" type="text" placeholder="enter destination" value="{{destination}}"></td><td style="color:white;">Rooms</td><td><input name="room" type="text" value="{{rooms}}" ></td></tr>
+    <tr><td style="color:white;">mobile no</td><td><input name="mobileno" type="text" placeholder="enter mobile no"></td></tr>
+    <tr><td style="color:white;">check in date</td><td><input name="cid" type="date" value="{{cid}}" ></td><td style="color: white;">check out date</td><td><input name="cod" type="date" value="{{cod}}"></td></tr>
+            
+        <tr><td style="color:white;">Member </td><td><input name="member" type="text" placeholder="enter members"></td></tr><tr><td><center><button type="submit" class="btn btn-primary">Submit</button></center></td><td><center><a href="/"><button type="button" class="btn btn-primary">cancel</button></a></center></td></tr> 
+       
+        
+            
+        
+            </form>
+       <
+        
+     
+     </table>
+        
+     </div>
+ </div>
+{% else %}
+<div class="container" >
+
+
+ {%csrf_token%} 
+   </div><br> <br><br> <br> <br><br><br> <br> <br>
+  <center>  <div id="cantact" style="background:rgba(255,255,255,.5); width: 80%;" >
+      <h1 ><font size="25">Please Login First </font> </h1>
+      
+      </div></center></div>
+           
+    </div>
+{%endif %}
+{%endblock %}

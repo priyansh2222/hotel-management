@@ -1,0 +1,21 @@
+﻿{%extends 'app/layout.html'%}
+{% load static %}
+ {% block body %} style="  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; background-image: url({%static '/app/images/88.jpg'%});" {%endblock%}
+}
+{%block content %} 
+
+<div class="container" >
+
+
+ {%csrf_token%} 
+   <br> <br><br> <br> <br><br><br> <br> <br>
+  <center>  <div id="cantact" style="background:rgba(255,255,255,.5); width: 80%;" >
+      <h1 ><font size="25"> Booking Complete </font> </h1>
+      
+      </div></center>
+</div>
+           
+  
+{% endblock %}

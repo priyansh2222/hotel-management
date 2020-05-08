@@ -1,0 +1,45 @@
+﻿{%extends 'app/layout.html'%}
+{% load static %}
+  {% block body %} style="  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; background-image: url({%static '/app/images/25.jpg'%});" {%endblock%}
+{% block head %}
+
+{% endblock %}
+{%block content %} 
+<style >
+    h1 {
+        color: red;
+    }
+    h2 {
+     color:white;
+    }
+
+</style>
+<div class="container" >
+
+
+ {%csrf_token%} 
+      <h1> All Corona  Cases in World</h1>
+     <h2>{{tc2}}</h2>
+    <h1> Deaths in World</h1>
+    <h2>{{death2}}</h2>
+    <h1> Recovered Cases in World</h1>
+     <h2>{{recovered2}}</h2>
+    <br /><br /><br /><br />
+    <form method="get" action="/corona2">
+
+    <table>
+        <tr> <td> Enter Country Name</td> <td> <input type="text" name="coantry" placeholder="INDIA" value="india" /> <td> <button type="submit">Submit</button></tdd></td></tr>
+    </table>
+    </form>
+    <h1> All Corona  Cases in {{contry}}</h1>
+     <h2>{{tc}}</h2>
+    <h1> Deaths</h1>
+    <h2>{{death}}</h2>
+    <h1> Recovered Cases</h1>
+     <h2>{{recovered}}</h2>
+
+    </div>
+
+{% endblock %}

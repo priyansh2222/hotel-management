@@ -1,0 +1,84 @@
+
+#full {
+width: 100%;
+    height: auto;
+}
+#header{
+width: 100%;
+    height: 100px;
+    background: gold;
+}
+#logo {
+width: 30%;
+height: auto;
+float: left;
+}
+#nav{
+width: 70%;
+height: auto;
+float: left;
+    font-style:oblique;
+}
+ul li{
+    list-style: none;
+    float: left;
+    width: 14%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+a{
+text-decoration: none;
+color: black;
+    font-size: 20px;
+}
+h1{
+padding: 10px;
+}
+#banner{
+width: 100%;
+    height: 400px;
+    background-color: yellow;
+}
+#f1{
+width: 100%;
+height: 100px;
+background-color: darkgoldenrod;}
+#welcome{
+width: 100%;
+    height: auto;
+}
+#our{
+    width: 100%;
+    height: 500px;
+}
+#one{
+height: auto;
+width: 33%;
+float: left;}
+
+#two{
+height: auto;
+width: 33%;
+float: left;}
+#three{
+height: auto;
+width: 33%;
+float: left;}
+#form{
+height: auto
+    ;
+    
+width: 1200px;
+padding-left: 15px;}
+td{
+    font-size: 20;
+    color:black;
+width:300px;
+height: 50px;}
+
+#login{
+    width: 300px;
+    height: auto;
+    background-color: tomato;
+}

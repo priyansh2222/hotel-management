@@ -1,0 +1,23 @@
+﻿{%extends 'app/layout.html'%}
+{% load static %}
+ {% block body %} background={%static '/app/images/88.jpg'%} style="width=100%;,height=600px;" {%endblock%}
+{%block content %} 
+
+<div class="container" >
+
+
+ {% csrf_token %} 
+   </div><br> <br><br> <br> <br><br><br> <br> <br>
+  <center>  <div id="cantact" style="background:rgba(255,255,255,.5); width: 80%;" >
+     
+       <h1 ><font size="25"> Your Bookings </font> </h1>
+      <h3 ><font >You have booked Room No. {{rooms}} </font> </h3>
+      <h3 ><font>Room type - {{type}} </font> </h3>
+      <h3 ><font>DATE - {{cid}} To {{cot}}</font> </h3>
+      
+     
+      
+      </div></center></div>
+           
+    </div>
+{% endblock %}

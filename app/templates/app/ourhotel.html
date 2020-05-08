@@ -1,0 +1,28 @@
+﻿{% extends 'app/layout.html'%}
+{% block content %}
+{%load static %}
+<div class="container">   
+ <center> <h1> Welcome to HOTEL PRIYANSH</h1></center>
+        <center>     <font size=5px > welcome to hotel priyansh ,we hope you will love our hotel and our hotel facilies<br> like view, swim pool, location , staff , restrount and etc. we provide you 24*7 customer care service and restrount facility .</font></center><br>
+        <center><h1 ><font color=red> OUR SPECIAL </font></h1>
+        </center>
+    
+        <div id="our">
+        <div id="one"> 
+        <img src={% static "app/images/23.jpg" %} width="100%" height="500px">
+            <center> <h1>VIEW FROM FRONT</h1></center><h4>I felt my lungs inflate with the onrush of scenery — air, mountains, trees, people. I thought, ‘This is what it is to be happy.'”.</h4>
+        </div>
+            <div id="two"> <img src={% static "app/images/24.jpg"%} width="100%" height="500px"><center><h1> RESTROUNT</h1> </center><center> <h4>
+perfect fuel <br />
+good food, good mood<br />
+bliss on a plate<br />
+healthy + delicious <br />
+our famous [food name]<br />
+[food name] goals.</h4></center>
+            </div>
+            <div id="three"> <img src={% static "app/images/22.jpg" %} width="100%" height="500px"><center><h1><font color=red>SWIM POOL</font></h1></center><H4>You are about to spend countless hours by the pool, if you plan on doing summer the right way. You can't let that sunlight go to waste... or those cute bathing suits you spent all winter purchasing at bargain prices. Chilling by the pool is all in good fun, and even if it's not your pool per se, you're going to need</H4>
+            
+            </div>
+    </div>
+    </div>
+{% endblock %}

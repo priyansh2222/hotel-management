@@ -1,0 +1,47 @@
+﻿{% extends "app/layout.html" %}
+
+{% block content %} 
+
+ 
+
+  
+    <div class="carousel-inner">
+       
+         <div class="carousel-item  active ">
+             {% with b=a|first %}
+      <img src='/media/{{b.image }}' style="height:500px;" class="d-block w-100"   >
+                  
+                                     
+               {% endwith %}
+                
+             
+             <div class="carousel-caption d-none d-md-block">
+        <h2 style="color: red; border:groove"><b>book Your Stay</b> </h2>
+       <div class=" container" style="background:rgba(255,255,255,.5);" >
+      <div id="f1"  >
+           <center><form action="/reg" method="get" ><table>
+            <tr> <th width="20%" height="50px"> DESTINATION</th>
+                 <th width="20%" height="50px">Room type</th>
+                
+                <th width="20%" height="50px"> check in date</th>
+                <th width="20%" height="50px"> check out date</th>
+             <th width="20%" height="50px"> ROOM</th></tr>
+               <tr> <td width="20%" height="50px"><center><select name="destination">
+                    <option> damoh</option>
+                   </select></center></td>
+                    <center><td width="20%" height="50px"><select name="rt">
+                    <option> AC</option>
+                        <option> non ac</option><option>LUXARY</option><option>normal room</option></select></td></center>
+                   <td width="20%" height="50px"> <center><input type="date" placeholder="enter date" name="cid" ></center></td>
+                   <td width="20%" height="50px"><center> <input type="date" placeholder="enter date" name="cod"></center></td>
+                <td width="20%" height="50px" > <center><select name="room">
+                    <option> 1</option>
+                   <option> 2</option><option> 3</option><option> 4</option><option> 5</option><option> 6</option>
+                    </select></center></td><td rowspan="2"><a href="reg.php"><input type="submit" name="submit" value="check" title="check" style="color:red; width=100px;"></a></td></tr></table></form></center>
+        </div>
+    </div>
+      </div>
+          </div>
+    </div>
+      
+{% endblock %}
